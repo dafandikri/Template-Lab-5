@@ -94,7 +94,13 @@ public class Main {
             System.out.println("Kenaikan Gaji Tidak Boleh Negatif!!!");
             return;
         }
-        employee.askRaise(raise);
+        if (employee instanceof PermanentEmployee) {
+            PermanentEmployee permanentEmployee = (PermanentEmployee) employee;
+            permanentEmployee.askRaise(raise);
+        } else if (employee instanceof ContractEmployee) {
+            ContractEmployee contractEmployee = (ContractEmployee) employee;
+            contractEmployee.askRaise(raise);
+        } 
         System.out.println("Employee dengan Nama/ID " + nameOrId + " Berhasil Dinaikkan Gajinya Sebesar " + raise);
     }
 
@@ -123,7 +129,13 @@ public class Main {
             System.out.println("Perpanjangan Kontrak Tidak Boleh Negatif!!!");
             return;
         }
-        employee.extendContract(duration);
+        if (employee instanceof PermanentEmployee) {
+            InternEmployee internEmployee = (InternEmployee) employee;
+            internEmployee.extendContract(duration);
+        } else if (employee instanceof ContractEmployee) {
+            ContractEmployee contractEmployee = (ContractEmployee) employee;
+            contractEmployee.extendContract(duration);
+        }
         System.out.println("Employee dengan Nama/ID " + nameOrId + " Berhasil Diperpanjang Kontraknya Sebesar " + duration + " Bulan");
     }
 
