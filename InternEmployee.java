@@ -19,7 +19,7 @@ public class InternEmployee extends Employee implements ExtendContractDuration {
 
     @Override
     public String toString() {
-        return this.employeeId + " " + this.name + " | Salary : " + this.calculateSalary() + " | Kenaikan : " + this.raise;
+        return "[" + this.employeeId + "] " + this.name + " | Salary : " + String.format("%.0f", this.calculateSalary()) + " | Kontrak : " + this.contractDuration + " Bulan";
     }
 
     private double getSalaryMultiplier() {
