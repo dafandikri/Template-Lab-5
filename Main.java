@@ -1,3 +1,28 @@
+/*
+    Nama        : Erdafa Andikri
+    NPM         : 2306244993
+    Kode Asdos  : RAC
+    Tanggal     : 5 April 2024
+
+    Program ini dibuat untuk memenuhi tugas Lab 05 mata kuliah DDP 2.
+
+    Program ini merupakan sebuah aplikasi sederhana untuk mengelola karyawan di sebuah perusahaan bernama PacilValley.
+    Program ini memiliki 5 menu:
+        1. Daftar Karyawan
+        2. Hire Karyawan
+        3. Menaikkan Gaji Karyawan (Permanent and Contract)
+        4. Memperpanjang Kontrak Karyawan (Contract and Intern)
+        5. Keluar
+
+    Menu 1 merupakan menu untuk menampilkan daftar karyawan yang terdaftar di perusahaan
+    Menu 2 merupakan menu untuk menambahkan karyawan baru ke dalam perusahaan
+    Menu 3 dan Menu 4 merupakan menu untuk mengelola karyawan yang telah dihire sebelumnya
+    Menu 5 merupakan menu untuk keluar dari program
+
+    Program ini memiliki error handling untuk memastikan input yang diberikan valid.
+*/
+
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -247,3 +272,16 @@ public class Main {
         System.out.println("Mohon masukkan opsi yang valid!\n");
     }
 }
+
+//      It's The End of The Program
+//            Thank You RAC!
+//
+//
+//
+//            Here's a null
+//                  :(
+
+// FYI: This lab was done on a tablet using replit because at the moment i am on the way of reaching my hometown.
+//      So, i can't use my laptop for this lab. Sorry if it's not as good as the previous labs i've done.
+
+// Have a Nice Day!
