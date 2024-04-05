@@ -26,10 +26,12 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+// Main class
 public class Main {
     static ArrayList<Employee> employeeList = new ArrayList<>();
     static Scanner sc = new Scanner(System.in);
 
+    // Main method
     public static void main(String[] args) {
         System.out.println("Selamat Datang di PacilRekrutment");
         while (true) {
@@ -60,6 +62,7 @@ public class Main {
         }
     }
 
+  // Menu 1
     public static void printEmployeeList() {
         if (employeeList.size() == 0)
             System.out.println("Tidak ada karyawan yang terdaftar");
@@ -73,6 +76,7 @@ public class Main {
         }
     }
 
+  // Menu 2
     public static void hireEmployee() {
         System.out.print("Nama: ");
         String name = sc.next();
@@ -105,6 +109,7 @@ public class Main {
         }
     }
 
+    // Menu 3
     public static void askForRaise() {
         if (getContractEmployee().size() == 0 && getPermanentEmployee().size() == 0){
             System.out.println("Tidak Ada Permanent atau Contract Employee yang Terdaftar!!!\n");
@@ -141,6 +146,7 @@ public class Main {
         System.out.println("Employee dengan Nama/ID " + nameOrId + " Berhasil Dinaikkan Gajinya Sebesar " + String.format("%.0f", raise) + "\n\n");
     }
 
+    // Menu 4
     public static void extendContract() {
         if (getContractEmployee().size() == 0 && getInternEmployee().size() == 0){
             System.out.println("Tidak Ada Contract atau Intern Employee yang Terdaftar!!!\n");
