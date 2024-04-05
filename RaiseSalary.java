@@ -1,3 +1,3 @@
-public interface RaiseSalary {
+interface RaiseSalary {
     public abstract void askRaise(double raise);
 }

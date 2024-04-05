@@ -90,16 +90,16 @@ public class Main {
         String nameOrId = sc.next();
         Employee employee = getEmployeeByNameOrId(nameOrId);
         if (employee == null) {
-            System.out.println("Employee dengan Nama/ID " + nameOrId + " Tidak Ditemukan!!!");
+            System.out.println("Employee dengan Nama/ID " + nameOrId + " Tidak Ditemukan!!!\n");
             return;
         } else if (employee instanceof InternEmployee) {
-            System.out.println("Intern Employee Tidak Bisa Mendapatkan Raise!!!");
+            System.out.println("Intern Employee Tidak Bisa Mendapatkan Raise!!!\n");
             return;
         }
         System.out.print("Masukan Jumlah Kenaikan Gaji: ");
         double raise = sc.nextDouble();
         if (raise < 0) {
-            System.out.println("Kenaikan Gaji Tidak Boleh Negatif!!!");
+            System.out.println("Kenaikan Gaji Tidak Boleh Negatif!!!\n");
             return;
         }
         if (employee instanceof PermanentEmployee) {
@@ -126,19 +126,19 @@ public class Main {
         String nameOrId = sc.next();
         Employee employee = getEmployeeByNameOrId(nameOrId);
         if (employee == null) {
-            System.out.println("Employee dengan Nama/ID " + nameOrId + " Tidak Ditemukan!!!");
+            System.out.println("Employee dengan Nama/ID " + nameOrId + " Tidak Ditemukan!!!\n");
             return;
         } else if (employee instanceof PermanentEmployee) {
-            System.out.println("PermanentEmployee Tidak Bisa Extend Kontrak!!!");
+            System.out.println("PermanentEmployee Tidak Bisa Extend Kontrak!!!\n");
             return;
         }
         System.out.print("Masukan Jumlah Perpanjangan Kontrak: ");
         int duration = sc.nextInt();
         if (duration < 0) {
-            System.out.println("Perpanjangan Kontrak Tidak Boleh Negatif!!!");
+            System.out.println("Perpanjangan Kontrak Tidak Boleh Negatif!!!\n");
             return;
         }
-        if (employee instanceof PermanentEmployee) {
+        if (employee instanceof InternEmployee) {
             InternEmployee internEmployee = (InternEmployee) employee;
             internEmployee.extendContract(duration);
         } else if (employee instanceof ContractEmployee) {

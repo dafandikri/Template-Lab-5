@@ -14,7 +14,7 @@ public class InternEmployee extends Employee implements ExtendContractDuration {
 
     @Override
     public void extendContract(int duration) {
-        this.contractDuration += duration;
+        this.contractDuration = this.contractDuration + duration;
     }
 
     @Override

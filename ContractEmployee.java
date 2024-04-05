@@ -10,17 +10,16 @@ public class ContractEmployee extends Employee implements RaiseSalary, ExtendCon
     @Override
     public void askRaise(double raise) {
         this.raise = raise;
-        this.salary = calculateSalary();
     }
 
     @Override
     public double calculateSalary() {
-        return (this.salary + this.raise) * getSalaryMultiplier();
+        return (this.salary + this.raise) * this.getSalaryMultiplier();
     }
 
     @Override
     public void extendContract(int duration) {
-        this.contractDuration += duration;
+        this.contractDuration = this.contractDuration + duration;
     }
 
     @Override
