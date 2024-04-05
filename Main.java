@@ -109,7 +109,7 @@ public class Main {
             ContractEmployee contractEmployee = (ContractEmployee) employee;
             contractEmployee.askRaise(raise);
         } 
-        System.out.println("Employee dengan Nama/ID " + nameOrId + " Berhasil Dinaikkan Gajinya Sebesar " + raise + "\n\n");
+        System.out.println("Employee dengan Nama/ID " + nameOrId + " Berhasil Dinaikkan Gajinya Sebesar " + String.format("%.0f", raise) + "\n\n");
     }
 
     public static void extendContract() {

@@ -25,7 +25,7 @@ public class ContractEmployee extends Employee implements RaiseSalary, ExtendCon
 
     @Override
     public String toString() {
-        return "[" + this.employeeId + "] " + this.name + " | Salary : " + String.format("%.0f", this.calculateSalary()) + " | Kenaikan : " + this.raise + " | Kontrak : " + this.contractDuration;
+        return "[" + this.employeeId + "] " + this.name + " | Salary : " + String.format("%.0f", this.calculateSalary()) + " | Kenaikan : " + String.format("%.0f", this.raise) + " | Kontrak : " + this.contractDuration;
     }
 
     private double getSalaryMultiplier() {

@@ -17,6 +17,6 @@ public class PermanentEmployee extends Employee implements RaiseSalary {
 
     @Override
     public String toString() {
-        return "[" + this.employeeId + "] " + this.name + " | Salary : " + String.format("%.0f", this.calculateSalary()) + " | Kenaikan : " + this.raise;
+        return "[" + this.employeeId + "] " + this.name + " | Salary : " + String.format("%.0f", this.calculateSalary()) + " | Kenaikan : " + String.format("%.0f", this.raise);
     }
 }

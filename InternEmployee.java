@@ -9,7 +9,7 @@ public class InternEmployee extends Employee implements ExtendContractDuration {
 
     @Override
     public double calculateSalary() {
-        return this.salary * getSalaryMultiplier();
+        return this.salary * this.getSalaryMultiplier();
     }
 
     @Override
