@@ -51,6 +51,10 @@ public class Main {
     public static void hireEmployee() {
         System.out.print("Nama: ");
         String name = sc.next();
+        if (getEmployeeByNameOrId(name) != null) {
+            System.out.println("Nama sudah terdaftar!!!\n");
+            return;
+        }
         System.out.print("Base Salary: ");
         double salary = sc.nextDouble();
         System.out.print("Status Employee (Permanent/Contract/Intern): ");
@@ -145,7 +149,7 @@ public class Main {
             ContractEmployee contractEmployee = (ContractEmployee) employee;
             contractEmployee.extendContract(duration);
         }
-        System.out.println("Employee dengan Nama/ID " + nameOrId + " Berhasil Diperpanjang Kontraknya Sebesar " + duration + " Bulan\n");
+        System.out.println("Employee dengan Nama/ID " + nameOrId + " Berhasil Diperpanjang Kontraknya Selama " + duration + " Bulan\n");
     }
 
     // Kumpulan Helper Method
